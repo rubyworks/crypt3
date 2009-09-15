@@ -1,0 +1,50 @@
+= Crypt3
+
+* http://crypt3.rubyforge.org
+
+
+== DESCRIPTION
+
+Crypt3 is a pure ruby version of crypt(3),
+a salted one-way hashing of a password.
+
+
+== FEATURES/ISSUES
+
+* List features and issues... __FIX__
+
+
+== RELEASE NOTES
+
+Please see RELEASE file.
+
+
+== SYNOPSIS
+
+Describe how to use your library or application here...__FIX__
+
+
+== HOW TO INSTALL
+
+To install with RubyGems simply open a console and type:
+
+  gem install crypt3
+
+Local installation requires Setup.rb (gem install setup),
+then download the tarball package and type:
+
+  tar -xvzf crypt3-1.0.0.tgz
+  cd crypt3-1.0.0.tgz
+  sudo setup.rb all
+
+Windows users use 'ruby setup.rb all'.
+
+
+== LICENSE
+
+Copyright (c) 2009 - Poul-Henning Kamp
+
+This program is ditributed unser the terms of the GPL license.
+
+See LICENSE file for details.
+
