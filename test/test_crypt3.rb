@@ -1,18 +1,17 @@
-# Test facets/crypt.rb
-
-require "facets/crypt.rb"
+require "crypt3.rb"
 require "test/unit"
 
-class CryptTest < Test::Unit::TestCase
+class Crypt3Test < Test::Unit::TestCase
 
   def array_test(arr, algo)
     arr.each do |password, hash|
-      assert(Crypt.check(password, hash, algo))
+      assert(Crypt3.check(password, hash, algo))
     end
   end
 
   def test_md5
-    a = [ [' ', '$1$yiiZbNIH$YiCsHZjcTkYd31wkgW8JF.'],
+    a = [
+      [' ', '$1$yiiZbNIH$YiCsHZjcTkYd31wkgW8JF.'],
       ['pass', '$1$YeNsbWdH$wvOF8JdqsoiLix754LTW90'],
       ['____fifteen____', '$1$s9lUWACI$Kk1jtIVVdmT01p0z3b/hw1'],
       ['____sixteen_____', '$1$dL3xbVZI$kkgqhCanLdxODGq14g/tW1'],
@@ -23,9 +22,9 @@ class CryptTest < Test::Unit::TestCase
     array_test(a, :md5)
   end
 
-  def test_bad_algo
+  def test_bad_algorithm
     assert_raise(ArgumentError) do
-      Crypt.crypt("qsdf", :qsdf)
+      Crypt3.crypt("qsdf", :qsdf)
     end
   end
 
