@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: generate a <tt>size</tt> length random salt
+full_name: Crypt3::generate_salt
+is_singleton: true
+name: generate_salt
+params: (size)
+visibility: public

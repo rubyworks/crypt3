@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: check the validity of a password against an hashed string
+full_name: Crypt3::check
+is_singleton: true
+name: check
+params: (password, hash, algo = :md5)
+visibility: public
