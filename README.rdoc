@@ -1,50 +1,69 @@
 = Crypt3
 
-* http://crypt3.rubyforge.org
+* http://rubyworks.github.com/crypt3
+* http://github.com/rubyworks/crypt3
 
 
-== DESCRIPTION
+== DESCRIPTION:
 
-Crypt3 is a pure ruby version of crypt(3),
-a salted one-way hashing of a password.
+Crypt3 is a pure ruby version of crypt(3) --a salted one-way
+hashing of a password.
 
-
-== FEATURES/ISSUES
-
-* List features and issues... __FIX__
-
-
-== RELEASE NOTES
-
-Please see RELEASE file.
+Supported hashing algorithms are: md5, sha1, sha256, sha384,
+sha512, rmd160. Only the md5 hashing algorithm is standard
+and compatible with crypt(3); the others are non-standard.
 
 
-== SYNOPSIS
+== FEATURES/ISSUES:
 
-Describe how to use your library or application here...__FIX__
+* Standard compliant crypt(3) implementation.
+* Written purely in Ruby.
+* Supports alternate hashing algorithms.
 
 
-== HOW TO INSTALL
+== RELEASE NOTES:
+
+Please see HISTORY file.
+
+
+== SYNOPSIS:
+
+Crypt3 provides a module method call +crypt+.
+
+  Crypt3.crypt('pass')
+
+It will return an encypted string, something like:
+
+  '$1$YeNsbWdH$wvOF8JdqsoiLix754LTW90'
+
+The validitly of which can ensured it using +check+:
+
+  Crypt3.check('pass', '$1$YeNsbWdH$wvOF8JdqsoiLix754LTW90')
+
+See the RDoc API for further details and options.
+
+
+== HOW TO INSTALL:
 
 To install with RubyGems simply open a console and type:
 
   gem install crypt3
 
-Local installation requires Setup.rb (gem install setup),
+Site installation requires Setup.rb (gem install setup),
 then download the tarball package and type:
 
-  tar -xvzf crypt3-1.0.0.tgz
-  cd crypt3-1.0.0.tgz
+  tar -xvzf crypt3-1.0.0.tar.gz
+  cd crypt3-1.0.0
   sudo setup.rb all
 
 Windows users use 'ruby setup.rb all'.
 
 
-== LICENSE
+== LICENSE:
 
 Copyright (c) 2009 - Poul-Henning Kamp
 
-This program is ditributed unser the terms of the GPL license.
+This program is ditributed unser the terms of the LGPL license.
 
-See LICENSE file for details.
+See LICENSE or COPYING file for details.
 

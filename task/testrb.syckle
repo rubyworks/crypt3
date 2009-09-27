@@ -6,5 +6,5 @@ testunit:
   loadpath : ~
   requires : ~
   live     : false   
-  active   : false
+  active   : true
 

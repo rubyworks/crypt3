@@ -39,7 +39,7 @@ require 'facets/string/xor.rb'
 #
 # A pure ruby version of crypt(3), a salted one-way hashing of a password.
 #
-module Crypt
+module Crypt3
 
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
@@ -54,8 +54,8 @@ module Crypt
   #
   # Output a length hashed and salted string with size of
   # magic.size + salt.size + 23.
-
-  def self.crypt(password, algo = :md5, salt = nil, magic='$1$')
+  #
+  def self.crypt(password, algo=:md5, salt = nil, magic='$1$')
 
     salt ||= generate_salt(8)
 
@@ -162,5 +162,6 @@ module Crypt
   def self.generate_salt(size)
     (1..size).collect { ITOA64[rand(ITOA64.size)].chr }.join("")
   end
+
 end
 
