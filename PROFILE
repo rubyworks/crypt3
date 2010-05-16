@@ -1,0 +1,21 @@
+--- 
+title  : Crypt3
+suite  : rubyworks
+license: GPL
+summary: Crypt3 is a ruby version of crypt(3).
+contact: trans <transfire@gmail.com>
+authors: Poul-Henning Kamp
+created: 2002-06-01
+
+description:
+  Crypt3 is a ruby version of crypt(3),
+  a salted one-way hashing of a password.
+
+resources:
+  homepage    : http://rubyworks.github.com/crypt3
+  resposityr  : http://github.com/rubyworks/crypt3
+  mailinglist : http://groups.google.com/group/rubyworks-mailinglist
+
+copyright:
+  Copyright (c) 2002 Poul-Henning Kamp
+
