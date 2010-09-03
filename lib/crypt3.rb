@@ -1,4 +1,4 @@
-# = Crypt
+# = Crypt3
 #
 # A pure ruby version of crypt(3), a salted one-way hashing of a password.
 #
@@ -33,12 +33,6 @@
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE.
 
-require 'facets/string/xor.rb'
-
-# = Crypt
-#
-# A pure ruby version of crypt(3), a salted one-way hashing of a password.
-#
 module Crypt3
 
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -161,6 +155,33 @@ module Crypt3
 
   def self.generate_salt(size)
     (1..size).collect { ITOA64[rand(ITOA64.size)].chr }.join("")
+  end
+
+end
+
+
+class String
+
+  # Binary XOR of two strings. 
+  #
+  #   a = "\000\000\001\001" ^ "\000\001\000\001"
+  #   b = "\003\003\003" ^ "\000\001\002"
+  #
+  #   a  #=> "\000\001\001\000"
+  #   b  #=> "\003\002\001"
+  #
+  def ^(aString)
+    a = self.unpack('C'*(self.length))
+    b = aString.unpack('C'*(aString.length))
+    if (b.length < a.length)
+      (a.length - b.length).times { b << 0 }
+    end
+    xor = ""
+    0.upto(a.length-1) { |pos|
+      x = a[pos] ^ b[pos]
+      xor << x.chr()
+    }
+    return(xor)
   end
 
 end

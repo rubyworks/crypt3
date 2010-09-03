@@ -1,0 +1,10 @@
+#!mast -x Syckfile .ruby lib meta test [A-Z]*
+.ruby
+lib/crypt3.rb
+meta/data.rb
+meta/package
+meta/profile
+test/test_crypt3.rb
+LICENSE
+README.rdoc
+HISTORY
