@@ -24,7 +24,7 @@ rdoc:
   service : rdoc
   template: redfish
   exclude : [Syckfile, PACKAGE, PROFILE, REQUIRE]
-  output  : site/docs/api
+  output  : doc
 
 ridoc:
   service: RIDoc

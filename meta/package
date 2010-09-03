@@ -1,3 +1,6 @@
 name    : crypt3
-version :  1.1.1
+version : 1.1.1
 date    : 2010-09-02
+
+requires:
+- syckle (build)
