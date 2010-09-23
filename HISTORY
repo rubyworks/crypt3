@@ -1,5 +1,15 @@
 = RELEASE HISTORY
 
+== 1.1.2 / 2010-09-03
+
+Well, it looks as if the String#^ (xor) method from Facets wasn't ever
+actually needed.
+
+Changes:
+
+* Removed String#^ extension.
+
+
 == 1.1.1 / 2010-09-02
 
 This release simply removes the dependency on Facets and updates
