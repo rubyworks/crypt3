@@ -1,63 +1,42 @@
----
-box:
-  service: Box
-  types  : [gem]
-  active : true
+#!/usr/bin/env ruby
 
-dnote:
-  service  : DNote
-  loadpath : ~
-  labels   : ~
-  output   : ~
-  format   : ~
-  active   : true
+box do
+  types ['gem']
+end
 
-stats:
-  service  : Stats
-  title    : ~
-  loadpath : ~
-  exclude  : ~
-  output   : ~
-  active   : true
+dnote
 
-rdoc:
-  service : rdoc
-  template: redfish
-  exclude : [Syckfile, PACKAGE, PROFILE, REQUIRE]
-  output  : doc
+stats
 
-ridoc:
-  service: RIDoc
-  include: ~
-  exclude: ~
-  output : ri
-  active : true
+rdoc do
+  template 'redfish'
+  exclude ['Syckfile']
+  output 'doc'
+end
 
-testrb:
-  service  : testrb
-  tests    : ~
-  exclude  : ~
-  loadpath : ~
-  requires : ~
-  live     : false   
-  active   : false
+ridoc do
+  output 'ri'
+end
 
-grancher:
-  service: Grancher
-  active: true
-  #sitemap:
-  #  - site
-  #  - [doc/rdoc, rdoc]
-  #  - [doc/qedoc, qedoc]
+testrb do
+  tests 'test/*'
+end
 
-gemcutter:
-  active: true
+grancher do
+  active true
+  #sitemap: [
+  #  'site', 
+  #  ['doc/rdoc', 'rdoc']
+  #  ['doc/qedoc', 'qed']
+  # ]
+end
 
-email:
-  service : Email
-  file    : ~
-  subject : ~
-  mailto  : ruby-talk@ruby-lang.org
+gemcutter do
+  active true
+end
+
+email do
+  mailto "ruby-talk@ruby-lang.org"
 #  from    : transfire@gmail.com
 #  server  : <%= ENV['EMAIL_SERVER'] %>
 #  port    : <%= ENV['EMAIL_PORT'] %>
@@ -65,13 +44,13 @@ email:
 #  domain  : <%= ENV['EMAIL_DOMAIN'] %>
 #  login   : <%= ENV['EMAIL_LOGIN'] %>
 #  secure  : <%= ENV['EMAIL_SECURE'] %>
-  active  : true
+end
 
-vclog:
-  service  : VClog
-  format   : html   # xml, txt
-  layout   : rel    # gnu
-  typed    : false
-  output   : ~
-  active   : false
+vclog do
+  active false
+  format 'html' # xml, txt
+  layout 'rel'  # gnu
+  typed  false
+  output nil
+end
 
