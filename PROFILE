@@ -1,7 +1,7 @@
 --- 
 title  : Crypt3
 suite  : rubyworks
-license: GPL
+license: Apache v2.0
 summary: Crypt3 is a ruby version of crypt(3).
 contact: trans <transfire@gmail.com>
 authors: Poul-Henning Kamp
@@ -12,9 +12,9 @@ description:
   a salted one-way hashing of a password.
 
 resources:
-  homepage    : http://rubyworks.github.com/crypt3
-  resposityr  : http://github.com/rubyworks/crypt3
-  mailinglist : http://groups.google.com/group/rubyworks-mailinglist
+  home: http://rubyworks.github.com/crypt3
+  mail: http://groups.google.com/group/rubyworks-mailinglist
+  repo: http://github.com/rubyworks/crypt3
 
 copyright:
   Copyright (c) 2002 Poul-Henning Kamp

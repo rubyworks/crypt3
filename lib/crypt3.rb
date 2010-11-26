@@ -4,36 +4,27 @@
 #
 # == History
 #
-#   Adapted by guillaume__dot__pierronnet_at__laposte__dot_net based on
-#   * http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/325204/index_txt
-#   which is based on FreeBSD src/lib/libcrypt/crypt.c 1.2
-#   * http://www.freebsd.org/cgi/cvsweb.cgi/~checkout~/src/lib/libcrypt/crypt.c?rev=1.2&content-type=text/plain
+# The Ruby version was written by Poul-Henning Kamp.
 #
-#   [Original License]
+# Adapted by guillaume__dot__pierronnet_at__laposte__dot_net based on
+# * http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/325204/index_txt
+# which is based on FreeBSD src/lib/libcrypt/crypt.c 1.2
+# * http://www.freebsd.org/cgi/cvsweb.cgi/~checkout~/src/lib/libcrypt/crypt.c?rev=1.2&content-type=text/plain
 #
-#   "THE BEER-WARE LICENSE" (Revision 42):
-#   <phk@login.dknet.dk> wrote this file.  As long as you retain this notice you
-#   can do whatever you want with this stuff. If we meet some day, and you think
-#   this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
+# [Original License]
 #
-# == Authors
-#
-# * Poul-Henning Kamp
+# "THE BEER-WARE LICENSE" (Revision 42):
+# <phk@login.dknet.dk> wrote this file.  As long as you retain this notice you
+# can do whatever you want with this stuff. If we meet some day, and you think
+# this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
 #
 # == Copying
 #
 # Copyright (c) 2002 Poul-Henning Kamp
-#
-# Ruby License
-#
-# This module is free software. You may use, modify, and/or redistribute this
-# software under the same terms as Ruby.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-# FOR A PARTICULAR PURPOSE.
 
 module Crypt3
+
+  VERSION = '1.1.2'
 
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
