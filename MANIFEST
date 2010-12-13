@@ -1,9 +1,7 @@
-#!mast -x Syckfile .ruby lib test [A-Z]*
+#!mast -x Syckfile -x PROFILE .ruby bin lib spec test [A-Z]*
 .ruby
 lib/crypt3.rb
 test/test_crypt3.rb
 HISTORY.rdoc
-PROFILE
 LICENSE
 README.rdoc
-VERSION
