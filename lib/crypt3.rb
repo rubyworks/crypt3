@@ -28,6 +28,8 @@ module Crypt3
 
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
+  module ImpOrd2String; def [](*args); self.slice(*args).ord; end; end
+
   # A pure ruby version of crypt(3), a salted one-way hashing of a password.
   #
   # Supported hashing algorithms are: md5, sha1, sha256, sha384, sha512, rmd160.
@@ -112,6 +114,9 @@ module Crypt3
 
     rearranged = ""
 
+    if defined?("has_ord?".ord)
+      final.extend ImpOrd2String
+    end
     [ [0, 6, 12], [1, 7, 13], [2, 8, 14], [3, 9, 15], [4, 10, 5] ].each do |a, b, c|
 
       v = final[a] << 16 | final[b] << 8 | final[c]
