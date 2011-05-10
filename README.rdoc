@@ -1,10 +1,11 @@
 = Crypt3
 
-* http://rubyworks.github.com/crypt3
-* http://github.com/rubyworks/crypt3
+Author:: Poul-Henning Kamp
+License:: Apache 2.0
+Copyright:: 2002 (c) Poul-Henning Kamp
 
 
-== DESCRIPTION:
+== DESCRIPTION
 
 Crypt3 is a pure ruby version of crypt(3) --a salted one-way
 hashing of a password.
@@ -14,19 +15,27 @@ sha512, rmd160. Only the md5 hashing algorithm is standard
 and compatible with crypt(3); the others are non-standard.
 
 
-== FEATURES/ISSUES:
+== FEATURES/LIMITATION
 
-* Standard compliant crypt(3) implementation.
-* Written purely in Ruby.
-* Supports alternate hashing algorithms.
+* Standard compliant crypt(3) implementation
+* Written in Ruby
+* Depends on Ruby's standard digest libraries
+* Supports alternate hashing algorithms
 
 
-== RELEASE NOTES:
+== RESOURCES
+
+* home: http://rubyworks.github.com/crypt3
+* code: http://github.com/rubyworks/crypt3
+* mail: http://groups.google.com/group/rubyworks-mailinglist
+
+
+== RELEASE NOTES
 
 Please see HISTORY file.
 
 
-== SYNOPSIS:
+== SYNOPSIS
 
 Crypt3 provides a module method call +crypt+.
 
@@ -43,7 +52,7 @@ The validitly of which can ensured it using +check+:
 See the RDoc API for further details and options.
 
 
-== HOW TO INSTALL:
+== INSTALLATIOPN
 
 To install with RubyGems simply open a console and type:
 
@@ -59,11 +68,11 @@ then download the tarball package and type:
 Windows users use 'ruby setup.rb all'.
 
 
-== LICENSE:
+== LICENSE
 
-Copyright (c) 2009 - Poul-Henning Kamp
+Copyright (c) 2009 Poul-Henning Kamp
 
-This program is ditributed unser the terms of the LGPL license.
+This program is ditributed unser the terms of the Apache 2.0 license.
 
-See LICENSE or COPYING file for details.
+See COPYING.rdoc and APACHE2.txt for details.
 

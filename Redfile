@@ -1,27 +1,32 @@
 #!/usr/bin/env ruby
 
-box do
-  types ['gem']
-end
+# build .gem package
+gem
 
+# generate dnotes
 dnote
 
+# generate basic statistics
 stats
 
+# generate rdocs
 rdoc do
-  template 'redfish'
-  exclude ['Syckfile']
+  format 'redfish'
+  exclude ['Redfile']
   output 'doc'
 end
 
+# generate ri docs
 ridoc do
   output 'ri'
 end
 
+# run unit tests
 testrb do
   tests 'test/*'
 end
 
+# publish website to github.com
 grancher do
   active true
   #sitemap: [
@@ -31,10 +36,12 @@ grancher do
   # ]
 end
 
+# publish gem to rubygems.org
 gemcutter do
   active true
 end
 
+# send announcement to ruby-talk mailing list.
 email do
   mailto "ruby-talk@ruby-lang.org"
 #  from    : transfire@gmail.com
@@ -46,11 +53,12 @@ email do
 #  secure  : <%= ENV['EMAIL_SECURE'] %>
 end
 
-vclog do
-  active false
-  format 'html' # xml, txt
-  layout 'rel'  # gnu
-  typed  false
-  output nil
-end
+#
+#vclog do
+#  active false
+#  format 'html' # xml, txt
+#  layout 'rel'  # gnu
+#  typed  false
+#  output nil
+#end
 

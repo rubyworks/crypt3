@@ -1,2 +1,0 @@
-Crypt3 is a pure ruby version of crypt(3),
-a salted one-way hashing of a password.
