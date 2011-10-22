@@ -24,7 +24,7 @@
 
 module Crypt3
 
-  VERSION = '1.1.2'
+  VERSION = '1.1.4'
 
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 

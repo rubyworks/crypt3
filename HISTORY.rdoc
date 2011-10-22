@@ -1,5 +1,14 @@
 = RELEASE HISTORY
 
+== 1.1.4 / 2011-10-23
+
+This release fixes VERSION constant. That's it.
+
+Changes:
+
+* Fix VERSION constant.
+
+
 == 1.1.3 / 2011-10-22
 
 This release is simply an administrative release to modernize the 
