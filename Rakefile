@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 
-# Sure wish I didn't need this file.
+require 'rake/testtask'
 
-Dir['.rake/*.rake'].each do |file|
-  load file
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList['test/test*.rb']
+  t.verbose = false
 end
 

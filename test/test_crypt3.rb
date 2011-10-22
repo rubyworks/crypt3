@@ -1,7 +1,7 @@
 require "crypt3.rb"
-require "test/unit"
+require "minitest/autorun"
 
-class Crypt3Test < Test::Unit::TestCase
+class Crypt3Test < MiniTest::Unit::TestCase
 
   def array_test(arr, algo)
     arr.each do |password, hash|
@@ -23,7 +23,7 @@ class Crypt3Test < Test::Unit::TestCase
   end
 
   def test_bad_algorithm
-    assert_raise(ArgumentError) do
+    assert_raises(ArgumentError) do
       Crypt3.crypt("qsdf", :qsdf)
     end
   end

@@ -1,5 +1,15 @@
 = RELEASE HISTORY
 
+== 1.1.3 / 2011-10-22
+
+This release is simply an administrative release to modernize the 
+build tools and build configuration used for the project.
+
+Changes:
+
+* Modernize build.
+
+
 == 1.1.2 / 2010-09-03
 
 Well, it looks as if the String#^ (xor) method from Facets wasn't ever

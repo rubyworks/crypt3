@@ -1,13 +1,13 @@
 = Crypt3
 
 Author:: Poul-Henning Kamp
-License:: Apache 2.0
+License:: BSD-2-Clause
 Copyright:: 2002 (c) Poul-Henning Kamp
 
 
 == DESCRIPTION
 
-Crypt3 is a pure ruby version of crypt(3) --a salted one-way
+Crypt3 is a pure Ruby version of crypt(3) --a salted one-way
 hashing of a password.
 
 Supported hashing algorithms are: md5, sha1, sha256, sha384,
@@ -15,12 +15,12 @@ sha512, rmd160. Only the md5 hashing algorithm is standard
 and compatible with crypt(3); the others are non-standard.
 
 
-== FEATURES/LIMITATION
+== FEATURES/LIMITATIONS
 
 * Standard compliant crypt(3) implementation
-* Written in Ruby
-* Depends on Ruby's standard digest libraries
 * Supports alternate hashing algorithms
+* Written in Ruby
+* But, it depends on Ruby's standard digest libraries
 
 
 == RESOURCES
@@ -72,7 +72,7 @@ Windows users use 'ruby setup.rb all'.
 
 Copyright (c) 2009 Poul-Henning Kamp
 
-This program is ditributed unser the terms of the Apache 2.0 license.
+This program is ditributed under the terms of the *FreeBSD* license.
 
-See COPYING.rdoc and APACHE2.txt for details.
+See COPYING.rdoc for details.
 

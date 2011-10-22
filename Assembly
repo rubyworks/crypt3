@@ -1,0 +1,33 @@
+---
+# publish website to github.com
+github:
+  active: true
+
+# build .gem package
+gem:
+  active: true
+
+# generate notes
+dnote:
+  active: true
+
+# generate yard docs
+yard:
+  priority: 2
+
+# run unit tests
+minitest:
+  tests: 'test/*'
+
+# send announcement to ruby-talk mailing list.
+email:
+  mailto:
+    - "ruby-talk@ruby-lang.org"
+    - "rubyworks-mailinglist@googlegroups.com"
+
+vclog:
+  output:
+    - 'log/Changes.rdoc'
+    - 'log/History.rdoc'
+
+
