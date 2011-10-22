@@ -34,7 +34,7 @@ revision: 0
 created: '2002-06-01'
 summary: Crypt3 is a ruby version of crypt(3)
 title: Crypt3
-version: 1.1.3
+version: 1.1.4
 name: crypt3
 description: ! 'Crypt3 is a ruby version of crypt(3),
 
