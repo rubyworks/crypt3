@@ -1,6 +1,6 @@
 ---
 source:
-- meta/
+- meta
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -9,8 +9,6 @@ copyrights:
 - holder: ''
   year: '2002'
   license: c) Poul-Henning Kamp (BSD-2-Clause
-replacements: []
-alternatives: []
 requirements:
 - name: detroit
   groups:
@@ -21,12 +19,14 @@ requirements:
   - test
   development: true
 dependencies: []
+alternatives: []
 conflicts: []
 repositories:
 - uri: git://github.com/rubyworks/crypt3.git
   scm: git
   name: upstream
-resources: {}
+resources: []
+categories: []
 extra: {}
 load_path:
 - lib
@@ -40,4 +40,4 @@ description: ! 'Crypt3 is a ruby version of crypt(3),
 
   a salted one-way hashing of a password.'
 organization: Rubyworks
-date: '2011-10-22'
+date: '2012-06-18'
