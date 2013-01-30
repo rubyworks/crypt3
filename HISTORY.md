@@ -1,5 +1,14 @@
 # RELEASE HISTORY
 
+## 1.1.5 / 2013-01-30
+
+This release add TomDoc based documentation.
+
+Changes:
+
+* Add TomDoc documentation.
+
+
 ## 1.1.4 / 2011-10-23
 
 This release fixes VERSION constant. That's it.

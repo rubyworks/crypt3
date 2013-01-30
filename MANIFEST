@@ -3,5 +3,6 @@
 .yardopts
 lib/crypt3.rb
 test/test_crypt3.rb
+LICENSE.txt
 HISTORY.md
 README.md
