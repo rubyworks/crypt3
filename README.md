@@ -1,13 +1,12 @@
 # Crypt3
 
-[![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3)
-[![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
-
 &copy; 2002 Poul-Henning Kamp (BSD-2-Clause License)
 
 [Website](http://rubyworks.github.com/crypt3) /
 [Report Issue](http://github.com/rubyworks/crypt3/issues) /
-[Source Code](http://github.com/rubyworks/crypt3)
+[Source Code](http://github.com/rubyworks/crypt3) /
+[![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3) /
+[![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 
 
 ## [Description](#description)
