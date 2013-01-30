@@ -9,7 +9,7 @@
 [![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 
 
-## [Description](#description)
+## [About](#about)
 
 Crypt3 is a pure Ruby version of crypt(3) --a salted one-way
 hashing of a password.
@@ -42,7 +42,7 @@ then download the tarball package and type:
 Windows users use 'ruby setup.rb all'.
 
 
-## [Usage](#usage)
+## [Basic Usage](#usage)
 
 Crypt3 provides a module method call `crypt`.
 
@@ -56,7 +56,8 @@ The validitly of which can ensured it using `check`:
 
     Crypt3.check('pass', '$1$YeNsbWdH$wvOF8JdqsoiLix754LTW90')
 
-See the API Documentation for further details and options.
+See the [API Documentation](http://rubydoc.info/gems/crypt3/frames) for further
+details and options.
 
 
 ## [Copyrights](#copyright)
