@@ -2,7 +2,7 @@
 
 ## 1.1.5 / 2013-01-30
 
-This release add TomDoc based documentation.
+This release adds TomDoc based documentation.
 
 Changes:
 
