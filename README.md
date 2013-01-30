@@ -1,10 +1,7 @@
-[![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3)
-[![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
-
-
 # Crypt3
 
-by Poul-Henning Kamp
+[![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3)
+[![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 
 &copy; 2002 Poul-Henning Kamp (BSD-2-Clause License)
 
@@ -61,7 +58,6 @@ The validitly of which can ensured it using `check`:
     Crypt3.check('pass', '$1$YeNsbWdH$wvOF8JdqsoiLix754LTW90')
 
 See the API Documentation for further details and options.
-
 
 
 ## [Copyrights](#copyright)
