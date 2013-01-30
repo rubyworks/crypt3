@@ -1,4 +1,4 @@
-<span class="float-right">
+<span class="align-right">
 [![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3)
 [![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 </span>
