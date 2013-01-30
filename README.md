@@ -1,7 +1,7 @@
-<div style="float: right;">
+<span class="float-right">
 [![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3)
 [![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
-</div>
+</span>
 
 
 # Crypt3
