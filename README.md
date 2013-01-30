@@ -1,11 +1,9 @@
 # Crypt3
 
-&copy; 2002 Poul-Henning Kamp (BSD-2-Clause License)
-
 [Website](http://rubyworks.github.com/crypt3) /
 [Report Issue](http://github.com/rubyworks/crypt3/issues) /
 [Source Code](http://github.com/rubyworks/crypt3) /
-[![Gem Version](https://badge.fury.io/rb/dotopts.png)](http://badge.fury.io/rb/crypt3) /
+[![Gem Version](https://badge.fury.io/rb/crypt3.png)](http://badge.fury.io/rb/crypt3) /
 [![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 
 
@@ -26,7 +24,7 @@ and compatible with crypt(3); the others are non-standard.
 * Written in Ruby (but depends on Ruby's standard digest libraries)
 
 
-## [Install](#install)
+## [Installing](#installing)
 
 To install with RubyGems simply open a console and type:
 
@@ -62,8 +60,9 @@ details and options.
 
 ## [Copyrights](#copyright)
 
-Copyright (c) 2009 Poul-Henning Kamp
+Copyright &copy; 2009 Poul-Henning Kamp
 
-This program is ditributed under the terms of the *BSD-2-Clause* license.
+This program is ditributed under the terms of the [BSD-2-Clause](http://opensource.org/licenses/BSD-2-Clause)
+license.
 
 See LICENSE.txt for full text.
