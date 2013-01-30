@@ -1,8 +1,4 @@
-# = Crypt3
-#
-# A pure ruby version of crypt(3), a salted one-way hashing of a password.
-#
-# == History
+# Crypt3 is a pure ruby version of crypt(3), a salted one-way hashing of a password.
 #
 # The Ruby version was written by Poul-Henning Kamp.
 #
@@ -11,38 +7,47 @@
 # which is based on FreeBSD src/lib/libcrypt/crypt.c 1.2
 # * http://www.freebsd.org/cgi/cvsweb.cgi/~checkout~/src/lib/libcrypt/crypt.c?rev=1.2&content-type=text/plain
 #
-# [Original License]
+# _Original License_
 #
 # "THE BEER-WARE LICENSE" (Revision 42):
 # <phk@login.dknet.dk> wrote this file.  As long as you retain this notice you
 # can do whatever you want with this stuff. If we meet some day, and you think
 # this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
 #
-# == Copying
-#
 # Copyright (c) 2002 Poul-Henning Kamp
 
 module Crypt3
 
-  VERSION = '1.1.4'  #:erb: VERSION = '<%= version %>'
+  # Current version of the library.
+  VERSION = '1.1.5'  #:erb: VERSION = '<%= version %>'
 
+  # Base 64 character set.
   ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-  module ImpOrd2String; def [](*args); self.slice(*args).ord; end; end
+  # Extends strings in #crypt.
+  module ImpOrd2String
+    def [](*args) 
+      self.slice(*args).ord
+    end
+  end
 
   # A pure ruby version of crypt(3), a salted one-way hashing of a password.
   #
   # Supported hashing algorithms are: md5, sha1, sha256, sha384, sha512, rmd160.
   #
-  # Only the md5 hashing algorithm is standard and compatible with crypt(3), the others
-  # are not standard.
+  # Only the md5 hashing algorithm is standard and compatible with crypt(3),
+  # the others are not standard.
   #
-  # Automatically generate a 8-bytes salt if nil.
+  # Automatically generates an 8-byte salt if none given.
   #
-  # Output a length hashed and salted string with size of
-  # magic.size + salt.size + 23.
+  # Output a length hashed and salted string with size of `magic.size + salt.size + 23`.
   #
-  def self.crypt(password, algo=:md5, salt = nil, magic='$1$')
+  # password - The pharse that was encrypted. [String]
+  # algo     - The algorithm used. [Symbol]
+  # salt     - Cryptographic salt, random if `nil`.
+  #
+  # Retuns the cryptogrphic hash. [String]
+  def self.crypt(password, algo=:md5, salt=nil, magic='$1$')
 
     salt ||= generate_salt(8)
 
@@ -137,18 +142,24 @@ module Crypt3
     magic + salt + '$' + rearranged
   end
 
-
-  # check the validity of a password against an hashed string
-
+  # Check the validity of a password against an hashed string.
+  #
+  # password - The pharse that was encrypted. [String]
+  # hash     - The cryptogrphic hash. [String]
+  # algo     - The algorithm used. [Symbol]
+  #
+  # Returns true if it checks out. [Boolean]
   def self.check(password, hash, algo = :md5)
     magic, salt = hash.split('$')[1,2]
     magic = '$' + magic + '$'
     self.crypt(password, algo, salt, magic) == hash
   end
 
-
-  # generate a +size+ length random salt
-
+  # Generate a random salt of the given `size`.
+  #
+  # size - The size of the salt. [Integer]
+  #
+  # Returns random salt. [String]
   def self.generate_salt(size)
     (1..size).collect { ITOA64[rand(ITOA64.size)].chr }.join("")
   end
@@ -174,6 +185,5 @@ module Crypt3
   #    }
   #    return(xor)
   #  end
-
 end
 

@@ -2,6 +2,7 @@
 --readme README.md
 --protected
 --private
+--plugin tomdoc
 lib
 -
 *.txt
