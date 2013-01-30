@@ -1,7 +1,7 @@
-#!mast .ruby .yardopts bin lib spec test [A-Z]*.*
-.ruby
+#!mast .index .yardopts bin lib spec test *.txt *.md
+.index
+.yardopts
 lib/crypt3.rb
 test/test_crypt3.rb
-HISTORY.rdoc
-README.rdoc
-COPYING.rdoc
+HISTORY.md
+README.md

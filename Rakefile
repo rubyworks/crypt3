@@ -1,10 +1,2 @@
 #!/usr/bin/env ruby
-
-require 'rake/testtask'
-
-Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList['test/test*.rb']
-  t.verbose = false
-end
-
+Dir['task/*.rake'].each { |f| import f }

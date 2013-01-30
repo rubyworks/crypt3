@@ -1,5 +1,8 @@
+--title Crypt3
+--readme README.md
 --protected
 --private
 lib
 -
-[A-Z]*.*
+*.txt
+*.md

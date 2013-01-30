@@ -1,0 +1,58 @@
+---
+revision: 2013
+type: ruby
+sources:
+- var
+authors:
+- name: Thomas Sawyer
+  email: transfire@gmail.com
+- name: Poul-Henning Kamp
+organizations:
+- name: Rubyworks
+requirements:
+- groups:
+  - build
+  development: true
+  name: rake
+- groups:
+  - build
+  development: true
+  name: detroit
+- groups:
+  - test
+  development: true
+  name: minitest
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://rubyworks.github.com/crypt3
+  label: Homepage
+- type: code
+  uri: http://github.com/rubyworks/crypt3
+  label: Source Code
+- type: bugs
+  uri: http://github.com/rubyworks/crypt3/issues
+  label: Issue Tracker
+repositories:
+- name: upstream
+  scm: git
+  uri: git://github.com/rubyworks/crypt3.git
+categories: []
+copyrights:
+- holder: ''
+  year: '2002'
+  license: c) Poul-Henning Kamp (BSD-2-Clause
+customs: []
+paths:
+  lib:
+  - lib
+created: '2002-06-01'
+summary: Crypt3 is a ruby version of crypt(3)
+title: Crypt3
+version: 1.1.5
+name: crypt3
+description: ! 'Crypt3 is a ruby version of crypt(3),
+
+  a salted one-way hashing of a password.'
+date: '2013-01-30'
