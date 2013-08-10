@@ -47,12 +47,12 @@ customs: []
 paths:
   lib:
   - lib
-created: '2002-06-01'
-summary: Crypt3 is a ruby version of crypt(3)
-title: Crypt3
-version: 1.1.5
 name: crypt3
-description: ! 'Crypt3 is a ruby version of crypt(3),
-
-  a salted one-way hashing of a password.'
-date: '2013-01-30'
+title: Crypt3
+summary: Crypt3 is a ruby version of crypt(3)
+created: '2002-06-01'
+description: |-
+  Crypt3 is a ruby version of crypt(3),
+  a salted one-way hashing of a password.
+version: 1.1.6
+date: '2013-08-09'
