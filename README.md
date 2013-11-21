@@ -1,9 +1,9 @@
 # Crypt3
 
-[Website](http://rubyworks.github.com/crypt3) /
-[Report Issue](http://github.com/rubyworks/crypt3/issues) /
-[Source Code](http://github.com/rubyworks/crypt3) /
-[![Gem Version](https://badge.fury.io/rb/crypt3.png)](http://badge.fury.io/rb/crypt3) /
+[Website](http://rubyworks.github.com/crypt3) :
+[Report Issue](http://github.com/rubyworks/crypt3/issues) :
+[Source Code](http://github.com/rubyworks/crypt3) - - - 
+[![Gem Version](https://badge.fury.io/rb/crypt3.png)](http://badge.fury.io/rb/crypt3) 
 [![Build Status](https://secure.travis-ci.org/rubyworks/crypt3.png)](http://travis-ci.org/rubyworks/crypt3)
 
 
